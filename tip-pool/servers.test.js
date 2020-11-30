@@ -14,6 +14,7 @@ describe('Servers test (with setup and tear-down)', function() {
 	it('Should append new TR on tbody on updateServerTable()', function() {
 		updateServerTable();
 		expect(serverTbody.children.length).toBeTruthy();
+		//expect(serverTbody.children.length).toEqual(1);
 	});
 	afterEach(function() {
 		// teardown logic
