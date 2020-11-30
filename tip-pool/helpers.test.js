@@ -13,7 +13,7 @@ describe('testing the minor functions in helpers', function() {
     }) */
 
 	it('convert bill and tip amount into a tip percent on calculateTipPercent', function() {
-		expect(calculateTipPercent(100, 20).toEqual(20));
+		expect(calculateTipPercent(100, 25).toEqual(25));
 	});
 
 	/*     it('accept a tr element and append a new td element from the value on appendTd(),' function() {
