@@ -12,14 +12,14 @@ describe('Servers test (with setup and tear-down)', function() {
 	});
 
 	it('Should append new TR on tbody on updateServerTable()', function() {
+		submitServerInfo();
 		updateServerTable();
-		//expect(serverTbody.children.length).toBeTruthy();
-		expect(serverTbody.children.length).toEqual(1);
+		expect(serverTbody.children.length).toBeTruthy();
 	});
-	/* 	afterEach(function() {
+	afterEach(function() {
 		// teardown logic
 		serverId = 0;
 		serverTbody.innerHTML = '';
 		allServers = {};
-	}); */
+	});
 });
